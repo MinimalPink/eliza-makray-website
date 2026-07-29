@@ -522,7 +522,11 @@ p{max-width:60ch}
   .musas-collage>*{grid-column:auto !important;grid-row:auto !important;aspect-ratio:4/5 !important}
 }
 .expo-video-wrap{margin-top:var(--space-md)}
-.expo-video-wrap video{width:100%;background:var(--carbon)}
+.expo-video-wrap video{
+  display:block;width:auto;max-width:100%;
+  height:min(72vh, 640px);max-height:640px;
+  background:var(--carbon);margin-inline:auto;
+}
 
 /* chapter 02 — ervas daninhas: poster wall, rotated */
 .poster-wall{display:flex;flex-wrap:wrap;gap:var(--space-sm);justify-content:center;padding-block:var(--space-sm)}
