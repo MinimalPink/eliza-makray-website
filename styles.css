@@ -49,7 +49,7 @@
   --space-xl: 9rem;
   --space-2xl: 13rem;
 
-  --container: min(100% - 3rem, 1400px);
+  --container: min(100% - 2rem, 1400px);
   --container-narrow: min(100% - 3rem, 860px);
 
   --ease: cubic-bezier(.22,.7,.24,1);
