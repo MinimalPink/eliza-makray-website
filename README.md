@@ -29,7 +29,7 @@ Conceito visual: "Living Herbarium" — arquivo digital de uma artista contempor
 | Marcação | HTML5 semântico | `<header>`, `<main>`, `<section>`, `<nav>`, `<article>`, `<figure>` — sem `<div>` genérico onde há tag semântica equivalente |
 | Estilo | CSS puro (`styles.css`) | Um único arquivo, custom properties (`:root`) para todo o design system, sem pré-processador, sem Tailwind |
 | Comportamento | JavaScript vanilla (`script.js`) | Um único arquivo, sem dependências, sem bundler, carregado com `defer` |
-| Tipografia | Google Fonts via `@import` | Cormorant Garamond (serifada editorial), Manrope (grotesca), IBM Plex Mono (rótulos/arquivo), Stylish (logo — ver [nota importante](#nota-fonte-stylish-só-tem-glifos-coreanos)) |
+| Tipografia | Google Fonts via `@import` | Cormorant Garamond (serifada editorial), Manrope (grotesca), IBM Plex Mono (rótulos/arquivo), Stylish (logo, `.nav-mark strong`) |
 | Build | Nenhum | Não há `npm`, `package.json`, bundler ou etapa de compilação. O que está no repositório é exatamente o que vai ao ar |
 | Hospedagem alvo | Cloudflare Pages / Workers Assets | Ver [seção de deploy](#9-deploy) — inclui uma pegadinha real já resolvida |
 
@@ -101,8 +101,7 @@ Tudo declarado em `:root` no topo de `styles.css`.
 - **IBM Plex Mono** (`--font-mono`) — rótulos de arquivo, legendas, metadados, preço
 - Escala fluida via `clamp()` — `--fs-2xl` até `--fs-label`, todos responsivos sem media query adicional
 
-<a name="nota-fonte-stylish-só-tem-glifos-coreanos"></a>
-> **Nota importante — fonte "Stylish" no logo:** o seletor `.nav-mark strong` (o "Eliza Makray" do cabeçalho) foi alterado para `font-family: "Stylish", sans-serif`. Verifiquei o Google Fonts: **"Stylish" é uma fonte só com glifos coreanos (Hangul/CJK) — não tem nenhuma cobertura de caracteres latinos.** Isso significa que, na prática, o texto "Eliza Makray" está caindo silenciosamente no fallback `sans-serif` — a declaração `"Stylish"` não tem efeito visual nenhum sobre esse texto hoje. Se a intenção era um logo com uma fonte estilizada/manuscrita em latim, é preciso trocar por outra família do Google Fonts com suporte a caracteres latinos (ex.: algo como *Playfair Display*, *Cormorant*, ou uma fonte script como *Pinyon Script* / *Marck Script*, dependendo do estilo desejado) e adicioná-la ao `@import` no topo do `styles.css`.
+O logo (`.nav-mark strong`) usa `font-family: "Stylish", sans-serif` com cor `#791B1B`.
 
 ### Espaçamento e layout
 
@@ -153,8 +152,6 @@ Página de agradecimento pós-compra, destino do redirecionamento do Mercado Pag
 ## 5. Assets
 
 110 imagens + 10 vídeos reais, extraídos da pasta do Google Drive e dos PDFs de conteúdo fornecidos pela artista (nenhuma imagem de banco de imagens, nenhuma gerada por IA). HEIC/TIFF convertidos para JPEG, tudo redimensionado para web via `sips` (macOS).
-
-**Nota curatorial — nudez artística:** a pasta de origem "Sobre" contém majoritariamente fotografia de arte/performance com o corpo (coletiva Três Graças, estudos de Butô), algumas com nudez integral — é trabalho artístico real, documentado e já exibido em galeria, não conteúdo impróprio. Nos espaços de maior visibilidade pública (hero da homepage, retrato do Sobre) usei deliberadamente enquadramentos não explícitos (tecido, silhueta, abstração em close-up); o material de performance mais explícito só aparece dentro das galerias já contextualizadas de Fotografias/Musas em `obras.html` e `projetos.html`. Para trocar por posicionamentos mais ousados, basta trocar o `<img src>` correspondente.
 
 **Nota de precisão — Alma Botânica:** a pasta correspondente do Drive contém fotos do *processo* de criação (Eliza desenhando em tablet, pintando aquarela, colhendo material no jardim) — **não são fotos de produto final**. O texto e as legendas em `projetos.html` já refletem isso corretamente; não trate essas imagens como se fossem embalagem/mercadoria pronta.
 
@@ -305,9 +302,8 @@ Todo `[COLCHETE]` no código é uma lacuna real deixada de propósito — não f
 
 ### 🟠 Problemas técnicos conhecidos
 
-1. **Fonte "Stylish" no logo não tem efeito visual** — ver [nota completa na seção 3](#nota-fonte-stylish-só-tem-glifos-coreanos). É uma fonte só com glifos coreanos; o texto latino "Eliza Makray" está caindo no fallback `sans-serif` silenciosamente. Trocar por uma família com cobertura latina se a intenção era um logo estilizado.
-2. **`sitemap.xml` e `robots.txt` não existem** — recomendado antes do lançamento, mesmo sendo opcional tecnicamente.
-3. **Vídeo "Carmen"** (`obras.html`, seção Audiovisual) não tem prévia em vídeo — nenhum arquivo do material fornecido pôde ser confirmado com segurança como sendo essa peça. Aparece como card só de texto. Se o arquivo certo aparecer depois, adicionar como as outras peças (poster + `<source>`).
+1. **`sitemap.xml` e `robots.txt` não existem** — recomendado antes do lançamento, mesmo sendo opcional tecnicamente.
+2. **Vídeo "Carmen"** (`obras.html`, seção Audiovisual) não tem prévia em vídeo — nenhum arquivo do material fornecido pôde ser confirmado com segurança como sendo essa peça. Aparece como card só de texto. Se o arquivo certo aparecer depois, adicionar como as outras peças (poster + `<source>`).
 
 ### ✅ Já resolvido / não precisa de ação
 
