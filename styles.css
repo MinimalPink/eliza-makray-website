@@ -521,7 +521,7 @@ p{max-width:60ch}
 /* ==========================================================================
    PROJETOS chapters (own visual rhythm each)
    ========================================================================== */
-.chapter{border-top:1px solid var(--line);padding-block:var(--space-xl)}
+.chapter { border-top: 1px solid var(--line); padding-block: var(--space-md); padding-right: 20px; padding-left: 20px; }
 .chapter-head{display:flex;gap:var(--space-md);align-items:flex-start;margin-bottom:var(--space-md);flex-wrap:wrap}
 .chapter-num{font-family:var(--font-mono);font-size:var(--fs-lg);color:var(--terracotta)}
 .chapter-head h2{max-width:20ch}
