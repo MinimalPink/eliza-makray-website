@@ -476,7 +476,7 @@ p{max-width:60ch}
    SUB-PAGE HEADER (obras/projetos/oficinas/sobre)
    ========================================================================== */
 .page-hero{
-  padding-block:calc(var(--space-xl) + 3rem) var(--space-lg);
+  padding-block:calc(var(--space-sm) + 3rem) var(--space-lg);
   border-bottom:1px solid var(--line);
 }
 .page-hero .label{margin-bottom:1rem}
