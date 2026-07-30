@@ -494,16 +494,16 @@ p{max-width:60ch}
 
 /* ---- split hero with video (oficinas) ---- */
 .page-hero-split{
-  display:grid;grid-template-columns:1.1fr .9fr;gap:var(--space-lg);align-items:center;
+  display:grid;grid-template-columns:1fr 1fr;gap:var(--space-lg);align-items:center;
   padding-block:calc(var(--space-sm) + 3rem) var(--space-lg);
   border-bottom:1px solid var(--line);
 }
-.page-hero-media{display:flex;flex-direction:column;gap:.7rem;max-width:340px;margin-inline:auto}
-.page-hero-media video{width:100%;aspect-ratio:1/1;object-fit:cover;background:var(--carbon)}
+.page-hero-media{display:flex;flex-direction:column;gap:.7rem;max-width:480px;margin-inline:auto}
+.page-hero-media video{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--carbon)}
 .page-hero-media-cap{color:var(--ink-soft);text-align:center}
 @media (max-width:900px){
   .page-hero-split{grid-template-columns:1fr;gap:var(--space-md)}
-  .page-hero-media{order:-1;max-width:280px}
+  .page-hero-media{order:-1;max-width:420px}
 }
 
 /* ---- obras: artwork grid ---- */
