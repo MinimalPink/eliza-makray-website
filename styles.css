@@ -4,6 +4,7 @@
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Stylish&display=swap');
 
 :root{
   /* ---- palette ---- */
@@ -171,6 +172,8 @@ p{max-width:60ch}
   display:flex;flex-direction:column;gap:3px;
 }
 .nav-mark strong{font-family:var(--font-display);font-size:1.7rem;letter-spacing:0;text-transform:none;font-weight:600}
+.logo-font { font-family: "Stylish", sans-serif; font-weight: 400; }
+
 .nav-links{display:flex;gap:clamp(1rem,2vw,2.2rem);align-items:center}
 .nav-links a{
   font-family:var(--font-mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;
