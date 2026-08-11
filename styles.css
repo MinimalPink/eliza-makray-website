@@ -518,6 +518,11 @@ p{max-width:60ch}
 @media (max-width:980px){.artwork-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:600px){.artwork-grid{grid-template-columns:1fr}}
 
+/* ---- fotografias: compact series row (same series, smaller, one line) ---- */
+.foto-series-row{display:flex;flex-wrap:wrap;gap:.6rem}
+.foto-series-row .artwork{width:clamp(84px, 12vw, 140px);flex:0 0 auto}
+.foto-series-row .artwork-frame img{aspect-ratio:1/1}
+
 .gallery-masonry{columns:3 320px;column-gap:var(--space-sm)}
 .gallery-masonry .artwork{break-inside:avoid;margin-bottom:var(--space-sm)}
 
