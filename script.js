@@ -117,10 +117,14 @@
   /* ============================================================
      IN-VIEW AUTOPLAY — native autoplay is unreliable when many
      <video autoplay> elements load at once (browsers silently drop
-     some without erroring). Drive play/pause explicitly instead.
+     some without erroring), and can start playback as soon as data
+     is ready regardless of scroll position. Videos marked
+     data-autoplay-inview have no native autoplay attribute at all;
+     play/pause is driven entirely by this observer so playback is
+     only ever triggered once the video is actually visible.
      ============================================================ */
   document.addEventListener("DOMContentLoaded", function () {
-    var videos = document.querySelectorAll("video[autoplay]");
+    var videos = document.querySelectorAll("video[autoplay], video[data-autoplay-inview]");
     if (!videos.length) return;
     if (!("IntersectionObserver" in window)) {
       videos.forEach(function (v) { v.play().catch(function () {}); });
