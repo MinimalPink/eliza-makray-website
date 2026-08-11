@@ -519,9 +519,10 @@ p{max-width:60ch}
 @media (max-width:600px){.artwork-grid{grid-template-columns:1fr}}
 
 /* ---- fotografias: compact series row (same series, smaller, one line) ---- */
-.foto-series-row{display:flex;flex-wrap:wrap;gap:.6rem}
-.foto-series-row .artwork{width:clamp(84px, 12vw, 140px);flex:0 0 auto}
+.foto-series-row{display:flex;flex-wrap:wrap;gap:var(--space-2xs)}
+.foto-series-row .artwork{width:clamp(180px, 22vw, 280px);flex:0 0 auto}
 .foto-series-row .artwork-frame img{aspect-ratio:1/1}
+@media (max-width:600px){.foto-series-row .artwork{width:clamp(130px, 42vw, 200px)}}
 
 .gallery-masonry{columns:3 320px;column-gap:var(--space-sm)}
 .gallery-masonry .artwork{break-inside:avoid;margin-bottom:var(--space-sm)}
