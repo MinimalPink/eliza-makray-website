@@ -205,7 +205,7 @@
       var nodes = document.querySelectorAll('[data-gallery="' + name + '"]');
       return Array.prototype.map.call(nodes, function (node) {
         var img = node.querySelector("img");
-        return { src: img ? img.currentSrc || img.src : "", alt: img ? img.alt : "" };
+        return { src: img ? img.dataset.full || img.currentSrc || img.src : "", alt: img ? img.alt : "" };
       });
     }
 
