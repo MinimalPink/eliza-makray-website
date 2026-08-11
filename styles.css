@@ -520,9 +520,9 @@ p{max-width:60ch}
 
 /* ---- fotografias: compact series row (same series, smaller, one line) ---- */
 .foto-series-row{display:flex;flex-wrap:wrap;gap:var(--space-2xs)}
-.foto-series-row .artwork{width:clamp(180px, 22vw, 280px);flex:0 0 auto}
+.foto-series-row .artwork{flex:1 1 230px;max-width:300px}
 .foto-series-row .artwork-frame img{aspect-ratio:1/1}
-@media (max-width:600px){.foto-series-row .artwork{width:clamp(130px, 42vw, 200px)}}
+@media (max-width:600px){.foto-series-row .artwork{flex-basis:130px;max-width:200px}}
 
 .gallery-masonry{columns:3 320px;column-gap:var(--space-sm)}
 .gallery-masonry .artwork{break-inside:avoid;margin-bottom:var(--space-sm)}
