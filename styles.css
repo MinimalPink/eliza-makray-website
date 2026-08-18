@@ -272,7 +272,7 @@ p{max-width:60ch}
   writing-mode:vertical-rl;letter-spacing:.1em;
 }
 @media (max-width:900px){
-  .hero{grid-template-columns:1fr;height:auto;min-height:100svh}
+  .hero{grid-template-columns:1fr;height:auto;min-height:0}
   .hero-visual{height:42vh}
   .hero-copy{padding:var(--space-sm) var(--edge-pad) var(--space-md);gap:1rem}
   .hero-botanical{display:none}
