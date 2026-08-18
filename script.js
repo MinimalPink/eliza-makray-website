@@ -286,4 +286,20 @@
     );
     io.observe(heroCta);
   });
+
+  /* ============================================================
+     HOME HERO — slow crossfade slider across the visual column
+     ============================================================ */
+  document.addEventListener("DOMContentLoaded", function () {
+    var slides = document.querySelectorAll(".hero-visual img");
+    var archiveLabel = document.querySelector("[data-archive-index]");
+    if (slides.length < 2 || prefersReducedMotion) return;
+    var i = 0;
+    setInterval(function () {
+      slides[i].classList.remove("is-active");
+      i = (i + 1) % slides.length;
+      slides[i].classList.add("is-active");
+      if (archiveLabel) archiveLabel.textContent = slides[i].dataset.archive;
+    }, 6500);
+  });
 })();
