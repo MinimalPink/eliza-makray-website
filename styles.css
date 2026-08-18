@@ -765,7 +765,19 @@ p{max-width:60ch}
 
 /* responsive base tweaks */
 @media (max-width:600px){
-  .section{padding-block:var(--space-lg)}
+  :root{
+    --space-3xs: 0.3rem;
+    --space-2xs: 0.5rem;
+    --space-xs: 0.8rem;
+    --space-sm: 1.2rem;
+    --space-md: 1.8rem;
+    --space-lg: 2.8rem;
+    --space-xl: 3.6rem;
+    --space-2xl: 4.5rem;
+    --container: min(100% - 1.5rem, 1400px);
+    --container-narrow: min(100% - 1.5rem, 860px);
+    --edge-pad: 1rem;
+  }
   h2{font-size:var(--fs-lg)}
 }
 
