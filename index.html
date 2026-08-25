@@ -232,24 +232,92 @@
       <div class="section-head" data-reveal>
         <div>
           <span class="label eyebrow">Trajetória</span>
-          <h2 id="timeline-heading">Exposições selecionadas</h2>
+          <h2 id="timeline-heading">Exposições</h2>
         </div>
         <span class="section-num mono">2020 — 2026</span>
       </div>
     </div>
 
     <div class="container">
-      <ul class="cv-list" data-reveal>
-        <li><span class="yr mono">2026</span><p><strong>Raízes e Reflexos</strong> — CIC, Florianópolis · coletiva.</p></li>
-        <li><span class="yr mono">2025</span><p><strong>Musas em Retratos: 8 inspirações em Florianópolis</strong> — Galeria Lama · individual.</p></li>
-        <li><span class="yr mono">2025</span><p><strong>Terra Fértil</strong> — Galeria Lama · individual.</p></li>
-        <li><span class="yr mono">2025</span><p><strong>Musas</strong> — Galeria Venere · individual.</p></li>
-        <li><span class="yr mono">2025</span><p><strong>Musas em Retratos — Futuro Ancestral</strong> — Maratona Cultural · coletiva.</p></li>
-        <li><span class="yr mono">2024</span><p><strong>Musas</strong> — Galeria Vinhos e Versos · individual.</p></li>
-        <li><span class="yr mono">2022</span><p><strong>As Cores de Cada Vida</strong> — exposição coletiva itinerante, SC.</p></li>
-        <li><span class="yr mono">2020</span><p><strong>Musas em Retratos</strong> — Festival Expancine · Mulheres Catarinenses.</p></li>
+      <ul class="cv-list cv-list--interactive" data-reveal>
+        <li tabindex="0" role="button" data-expo-trigger data-expo="expo-0" aria-haspopup="dialog"><span class="yr mono">2026</span><p><strong>Raízes e Reflexos: A Arte de Santa Catarina</strong> — CIC, Florianópolis · coletiva.</p></li>
+        <li tabindex="0" role="button" data-expo-trigger data-expo="expo-1" aria-haspopup="dialog"><span class="yr mono">2025</span><p><strong>Musas em Retratos: 8 inspirações em Florianópolis</strong> — Galeria Lama · individual.</p></li>
+        <li tabindex="0" role="button" data-expo-trigger data-expo="expo-2" aria-haspopup="dialog"><span class="yr mono">2025</span><p><strong>Terra Fértil</strong> — Galeria Lama · individual.</p></li>
+        <li tabindex="0" role="button" data-expo-trigger data-expo="expo-3" aria-haspopup="dialog"><span class="yr mono">2025</span><p><strong>Musas</strong> — Galeria Venere · individual.</p></li>
+        <li tabindex="0" role="button" data-expo-trigger data-expo="expo-4" aria-haspopup="dialog"><span class="yr mono">2025</span><p><strong>Musas em Retratos — Futuro Ancestral</strong> — Maratona Cultural · coletiva.</p></li>
+        <li tabindex="0" role="button" data-expo-trigger data-expo="expo-5" aria-haspopup="dialog"><span class="yr mono">2024</span><p><strong>Musas</strong> — Galeria Vinhos e Versos · individual.</p></li>
+        <li tabindex="0" role="button" data-expo-trigger data-expo="expo-6" aria-haspopup="dialog"><span class="yr mono">2022</span><p><strong>As Cores de Cada Vida</strong> — exposição coletiva itinerante, SC.</p></li>
+        <li tabindex="0" role="button" data-expo-trigger data-expo="expo-7" aria-haspopup="dialog"><span class="yr mono">2020</span><p><strong>Musas em Retratos</strong> — Festival Expancine · Mulheres Catarinenses.</p></li>
       </ul>
       <a class="btn btn-outline" href="sobre.html#trajetoria" style="margin-top:var(--space-md)">Ver trajetória completa <span class="btn-arrow" aria-hidden="true">→</span></a>
+    </div>
+
+    <!-- hidden exhibition detail content, cloned into the modal on click -->
+    <div hidden>
+      <template id="expo-0">
+        <span class="expo-modal-year mono">2026</span>
+        <h3 class="expo-modal-title display">Raízes e Reflexos: A Arte de Santa Catarina</h3>
+        <div class="expo-modal-body">
+          <p><a href="https://acreverdade.com.br/exposicao-raizes-reflexos-arte-santa-catarina/" target="_blank" rel="noopener">Exposição coletiva Raízes e Reflexos: A Arte de Santa Catarina</a>, aconteceu para a reabertura das salas expositivas Lindolf Bell 1 e 2, do <a href="https://www.cultura.sc.gov.br/programacao/espacos/cic/3789-exposicao-raizes-e-reflexos-a-arte-de-santa-catarina" target="_blank" rel="noopener">Centro Integrado de Cultura (CIC)</a> de Florianópolis, SC, com curadoria de Beatriz Rey.</p>
+        </div>
+      </template>
+      <template id="expo-1">
+        <span class="expo-modal-year mono">2025</span>
+        <h3 class="expo-modal-title display">Musas em Retratos: 8 inspirações em Florianópolis</h3>
+        <div class="expo-modal-body">
+          <p><a href="https://ndmais.com.br/cultura/exposicao-em-florianopolis-une-botanica-fotografia-e-historia-ao-homenagear-oito-mulheres/" target="_blank" rel="noopener">Musas em Retratos: 8 inspirações em Florianópolis</a> aconteceu através da proposta aprovada no Edital do Circuito Catarinense de Cultura - PNAB SC 2024, com execução do Governo do Estado de Santa Catarina, por meio da <a href="https://www.cultura.sc.gov.br/" target="_blank" rel="noopener">Fundação Catarinense de Cultura (FCC)</a> e recursos do Governo Federal e da Política Nacional Aldir Blanc. Com direção artística e produção de arte de Eliza Makray, fotografia de Letícia Ichnaz e direção de produção executiva e de comunicação de Inês Hübner, a exposição aconteceu na <a href="https://www.galerialama.com.br" target="_blank" rel="noopener">Galeria Lama</a>, no centro de Florianópolis, SC, de 14 até 28 de novembro de 2025.</p>
+        </div>
+      </template>
+      <template id="expo-2">
+        <span class="expo-modal-year mono">2025</span>
+        <h3 class="expo-modal-title display">Terra Fértil</h3>
+        <div class="expo-modal-body">
+          <p><a href="https://www.instagram.com/p/DH4b6gQssOl/" target="_blank" rel="noopener">Exposição artística individual</a> da artista multidisciplinar Eliza Makray, com curadoria de <a href="https://www.escavador.com/sobre/8867734/isabela-mendes-sielski" target="_blank" rel="noopener">Isabela Sielski</a>, realizada em abril de 2025 na <a href="https://www.galerialama.com.br" target="_blank" rel="noopener">Galeria Lama</a>, situada no centro de Florianópolis, SC.</p>
+        </div>
+      </template>
+      <template id="expo-3">
+        <span class="expo-modal-year mono">2025</span>
+        <h3 class="expo-modal-title display">Musas — Galeria Venere</h3>
+        <div class="expo-modal-body">
+          <p>A <a href="https://www.instagram.com/p/DGTxaONRRD_/?img_index=1" target="_blank" rel="noopener">exposição individual</a> apresentou as séries Aquarelas Naturais e Plantas Secas e Musas em Retratos. Ocorreu na <a href="https://www.galeriavenere.com/" target="_blank" rel="noopener">Galeria Venere</a>, em Jurerê, Florianópolis, SC, entre 06 de fevereiro e 08 de março de 2025. A mostra celebrou o feminino e o meio ambiente por meio de conexões estéticas e conceituais.</p>
+        </div>
+      </template>
+      <template id="expo-4">
+        <span class="expo-modal-year mono">2025</span>
+        <h3 class="expo-modal-title display">Musas em Retratos — Futuro Ancestral</h3>
+        <div class="expo-modal-body">
+          <p>O projeto coletivo "Futuro Ancestral", reuniu trabalhos visuais e fotográficos desenvolvidos por Ana Soukef, Clarissa Herring, Julia Perosa, Maria Luisa Coura, Maria Luiza Amorim, Mirim Gonçalves, Paloma Gomide, Renata Gordo e Eliza Makray, com a série <a href="https://www.instagram.com/p/DHlDDRdgI8H/" target="_blank" rel="noopener">Musas em Retratos</a>.</p>
+          <p>A curadoria foi de <a href="https://nefa.com.br/equipe" target="_blank" rel="noopener">Lucila Horn</a> e integrou a programação oficial da <a href="https://www.nsctotal.com.br/entretenimento/teresa-cristina-auto-da-compadecida-e-mais-o-que-acontece-na-maratona-cultural-neste-sabado" target="_blank" rel="noopener">Maratona Cultural de Florianópolis</a>, com a exibição de fotografias projetadas diretamente nas fachadas dos prédios históricos no Centro Leste da cidade. O evento ocorreu no espaço externo integrado do <a href="https://www.instagram.com/pontobarepiadina/" target="_blank" rel="noopener">Ponto Bar &amp; Piadina</a>, 22 de março de 2025, em Florianópolis, SC.</p>
+        </div>
+      </template>
+      <template id="expo-5">
+        <span class="expo-modal-year mono">2024</span>
+        <h3 class="expo-modal-title display">Musas — Vinhos e Versos</h3>
+        <div class="expo-modal-body">
+          <p>Na exposição individual <a href="https://www.instagram.com/p/C_5i5tvRQlH/" target="_blank" rel="noopener">Musas</a>, a artista apresentou sua <a href="https://www.instagram.com/p/DBwda-7RabL/?img_index=1" target="_blank" rel="noopener">série</a> de aquarelas naturais e colagem com plantas secas de nominada Musas e também realizou o lançamento da série Musas em Retratos. A curadoria foi feita pela própria artista e o evento aconteceu na galeria do <a href="https://www.instagram.com/p/DCnFXbpxZBG/" target="_blank" rel="noopener">Vinhos e Versos</a>, no Rio Tavares, Florianópolis, SC.</p>
+        </div>
+      </template>
+      <template id="expo-6">
+        <span class="expo-modal-year mono">2022</span>
+        <h3 class="expo-modal-title display">As Cores de Cada Vida</h3>
+        <div class="expo-modal-body">
+          <p>A exposição itinerante <a href="https://globoplay.globo.com/v/11182961/" target="_blank" rel="noopener">As Cores de Cada Vida</a>, realizada pela <a href="https://pcporelas.pc.sc.gov.br/noticias.php?id=15" target="_blank" rel="noopener">Polícia Civil de Santa Catarina</a> em parceria com artistas catarinenses e o <a href="https://ovm.alesc.sc.gov.br/noticias/cores-de-cada-vida-exposicao-retrata-vitimas-de-feminicidio-no-estado/" target="_blank" rel="noopener">Observatório da Violência contra a Mulher</a>, apresenta 20 retratos estilizados de mulheres vítimas de feminicídio e tentativa de feminicídio. A mostra busca humanizar essas histórias para que elas não sejam apenas números em estatísticas.</p>
+        </div>
+      </template>
+      <template id="expo-7">
+        <span class="expo-modal-year mono">2020</span>
+        <h3 class="expo-modal-title display">Musas em Retratos — Festival Expancine</h3>
+        <div class="expo-modal-body">
+          <p>O <a href="https://www.nsctotal.com.br/colunista/leo-coelho/mulheres-artistas-catarinenses-sao-tema-de-exposicao-em-florianopolis" target="_blank" rel="noopener">Festival Expancine</a> é um evento cultural e audiovisual criado pela produtora <a href="https://www.instagram.com/expancineproducoes/" target="_blank" rel="noopener">Thais Alemany</a>. Ficou conhecido por sua edição inaugural marcante em dezembro de 2020, <a href="https://catarinas.info/38-artistas-visuais-para-conhecer-em-santa-catarina/" target="_blank" rel="noopener">Mulheres Catarinenses</a>, que reuniu dezenas de artistas visuais do estado, incluindo Eliza Makray, com projeções de vídeos e imagens ao ar livre no <a href="https://multiopenshopping.com.br/" target="_blank" rel="noopener">MULTI Open Shopping</a>, no Rio Tavares, em Florianópolis, SC.</p>
+        </div>
+      </template>
+    </div>
+
+    <div class="expo-modal" data-expo-modal hidden>
+      <div class="expo-modal-panel" role="dialog" aria-modal="true" aria-labelledby="expo-modal-title-el">
+        <button class="expo-modal-close" data-expo-modal-close aria-label="Fechar">✕</button>
+        <div data-expo-modal-content></div>
+      </div>
     </div>
   </section>
 

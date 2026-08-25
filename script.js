@@ -288,6 +288,54 @@
   });
 
   /* ============================================================
+     EXHIBITION DETAIL MODAL — home "Exposições" list
+     ============================================================ */
+  document.addEventListener("DOMContentLoaded", function () {
+    var modal = document.querySelector("[data-expo-modal]");
+    if (!modal) return;
+    var content = modal.querySelector("[data-expo-modal-content]");
+    var closeBtn = modal.querySelector("[data-expo-modal-close]");
+    var lastFocused = null;
+
+    function open(id) {
+      var tpl = document.getElementById(id);
+      if (!tpl) return;
+      content.innerHTML = "";
+      content.appendChild(tpl.content.cloneNode(true));
+      lastFocused = document.activeElement;
+      modal.hidden = false;
+      requestAnimationFrame(function () { modal.dataset.open = "true"; });
+      document.body.style.overflow = "hidden";
+      closeBtn.focus();
+    }
+
+    function close() {
+      modal.dataset.open = "false";
+      document.body.style.overflow = "";
+      setTimeout(function () { modal.hidden = true; }, 300);
+      if (lastFocused) lastFocused.focus();
+    }
+
+    document.querySelectorAll("[data-expo-trigger]").forEach(function (row) {
+      row.addEventListener("click", function () { open(row.dataset.expo); });
+      row.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          open(row.dataset.expo);
+        }
+      });
+    });
+
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) close();
+    });
+    closeBtn.addEventListener("click", close);
+    document.addEventListener("keydown", function (e) {
+      if (!modal.hidden && e.key === "Escape") close();
+    });
+  });
+
+  /* ============================================================
      HOME HERO — slow crossfade slider across the visual column
      ============================================================ */
   document.addEventListener("DOMContentLoaded", function () {

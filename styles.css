@@ -644,6 +644,55 @@ p{max-width:60ch}
 .cv-list li .yr{font-family:var(--font-mono);color:var(--terracotta)}
 .cv-list li p{color:var(--ink-soft);max-width:70ch}
 
+.cv-list--interactive li{
+  cursor:pointer;transition:padding-left var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+  border-radius:var(--radius-sm);
+}
+.cv-list--interactive li:hover, .cv-list--interactive li:focus-visible{
+  background:var(--bg-alt);padding-left:.6rem;margin-left:-.6rem;
+}
+.cv-list--interactive li p strong{position:relative}
+.cv-list--interactive li p strong::after{
+  content:"→";display:inline-block;margin-left:.5em;opacity:0;
+  transition:opacity var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
+  transform:translateX(-4px);
+}
+.cv-list--interactive li:hover p strong::after, .cv-list--interactive li:focus-visible p strong::after{
+  opacity:.6;transform:translateX(0);
+}
+
+/* ---- exhibition detail modal ---- */
+.expo-modal{
+  position:fixed;inset:0;z-index:500;
+  background:rgba(23,21,18,.75);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;
+  transition:opacity var(--dur-fast) var(--ease);
+  padding:var(--space-sm);
+}
+.expo-modal[data-open="true"]{opacity:1;pointer-events:auto}
+.expo-modal-panel{
+  position:relative;background:var(--bg);color:var(--ink);
+  max-width:640px;width:100%;max-height:84vh;overflow-y:auto;
+  padding:var(--space-md) var(--space-sm) var(--space-sm);
+  border-radius:var(--radius-sm);
+  transform:translateY(12px);
+  transition:transform var(--dur-fast) var(--ease);
+}
+.expo-modal[data-open="true"] .expo-modal-panel{transform:translateY(0)}
+.expo-modal-year{display:block;font-family:var(--font-mono);color:var(--terracotta);margin-bottom:.4rem}
+.expo-modal-title{margin-bottom:1rem;max-width:none}
+.expo-modal-body p{color:var(--ink-soft);max-width:none;line-height:1.6}
+.expo-modal-body a{text-decoration:underline;text-underline-offset:3px;color:var(--terracotta)}
+.expo-modal-body a:hover{color:var(--burgundy)}
+.expo-modal-close{
+  position:absolute;top:1rem;right:1rem;color:var(--ink);font-family:var(--font-mono);font-size:1rem;
+  padding:.8em;border:1px solid var(--line-strong);border-radius:50%;
+  width:40px;height:40px;display:flex;align-items:center;justify-content:center;
+  transition:border-color var(--dur-fast) var(--ease);
+}
+.expo-modal-close:hover{border-color:var(--ink)}
+
 .accordion-trigger{
   width:100%;display:flex;justify-content:space-between;align-items:center;
   padding-block:1.2rem;border-top:1px solid var(--line);text-align:left;
