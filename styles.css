@@ -683,8 +683,18 @@ p{max-width:60ch}
 .expo-modal-year{display:block;font-family:var(--font-mono);color:var(--terracotta);margin-bottom:.4rem}
 .expo-modal-title{margin-bottom:1rem;max-width:none}
 .expo-modal-body p{color:var(--ink-soft);max-width:none;line-height:1.6}
-.expo-modal-body a{text-decoration:underline;text-underline-offset:3px;color:var(--terracotta)}
-.expo-modal-body a:hover{color:var(--burgundy)}
+.expo-modal-links{display:flex;flex-direction:column;gap:.6rem;margin-top:1.4rem;padding-top:1.2rem;border-top:1px solid var(--line)}
+.expo-modal-links a, .expo-modal-link-pending{
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:.7em 1em;border:1px solid var(--line-strong);border-radius:var(--radius-sm);
+  font-size:var(--fs-sm);color:var(--ink);
+  transition:background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+}
+.expo-modal-links a:hover{background:var(--ink);color:var(--ivory);border-color:var(--ink)}
+.expo-modal-links a .btn-arrow{flex:0 0 auto;transition:transform var(--dur-fast) var(--ease)}
+.expo-modal-links a:hover .btn-arrow{transform:translateX(4px)}
+.expo-modal-link-pending{color:var(--ink-soft);border-style:dashed;cursor:default}
+.expo-modal-link-pending .mono{font-size:.78em;opacity:.7}
 .expo-modal-close{
   position:absolute;top:1rem;right:1rem;color:var(--ink);font-family:var(--font-mono);font-size:1rem;
   padding:.8em;border:1px solid var(--line-strong);border-radius:50%;
