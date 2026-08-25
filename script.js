@@ -300,6 +300,6 @@
       i = (i + 1) % slides.length;
       slides[i].classList.add("is-active");
       if (archiveLabel) archiveLabel.textContent = slides[i].dataset.archive;
-    }, 6500);
+    }, 2500);
   });
 })();

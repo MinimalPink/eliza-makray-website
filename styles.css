@@ -227,7 +227,7 @@ p{max-width:60ch}
   width:100%;height:100%;object-fit:cover;object-position:40% 58%;
   transform:scale(1.06);
   opacity:0;
-  transition:transform 9s var(--ease), opacity 1.8s var(--ease);
+  transition:transform 3.2s var(--ease), opacity 1s var(--ease);
 }
 .hero-visual img.is-active{opacity:1;z-index:1;transform:scale(1)}
 .hero-visual::after{
@@ -236,7 +236,7 @@ p{max-width:60ch}
   z-index:2;
 }
 @media (prefers-reduced-motion: reduce){
-  .hero-visual img{transition:opacity 1.8s var(--ease)}
+  .hero-visual img{transition:opacity 1s var(--ease)}
 }
 .hero-copy{
   position:relative;
