@@ -3,8 +3,7 @@
    Warm mineral palette · editorial serif + grotesk + mono · fluid type
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Stylish&display=swap');
 
 :root{
   /* ---- palette ---- */
@@ -26,8 +25,8 @@
   --line-strong: rgba(23,21,18,0.28);
 
   /* ---- type families ---- */
-  --font-display:'Cormorant Garamond', 'Times New Roman', serif;
   --font-body:'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: var(--font-body);
   --font-mono:'IBM Plex Mono', ui-monospace, Menlo, monospace;
 
   /* ---- fluid type scale ---- */
