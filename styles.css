@@ -107,6 +107,16 @@ body::before{
 }
 .label--on-dark{color:rgba(241,234,223,.75)}
 h3.label{letter-spacing:.03em}
+
+.series-title{
+  font-family:"Stylish", sans-serif;
+  font-weight:400;
+  font-size:var(--fs-md);
+  text-transform:none;
+  letter-spacing:0;
+  color:var(--ink);
+  line-height:1.15;
+}
 .eyebrow{display:flex;align-items:center;gap:.6em}
 .eyebrow::before{content:"";width:1.6em;height:1px;background:currentColor;opacity:.5}
 
