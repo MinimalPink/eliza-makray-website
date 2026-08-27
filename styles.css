@@ -3,7 +3,7 @@
    Warm mineral palette · editorial serif + grotesk + mono · fluid type
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@500;600;700;800&family=Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Stylish&display=swap');
 
 :root{
   /* ---- palette ---- */
@@ -27,7 +27,7 @@
   /* ---- type families ---- */
   --font-body:'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-display: var(--font-body);
-  --font-mono:'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  --font-mono: var(--font-body);
 
   /* ---- fluid type scale ---- */
   --fs-2xl: clamp(3.4rem, 3rem + 5vw, 8.5rem);
@@ -95,7 +95,7 @@ body::before{
 }
 
 /* ---- type helpers ---- */
-.display{font-family:"Montserrat", sans-serif;font-weight:800;line-height:1.05;letter-spacing:-.01em}
+.display{font-family:"Manrope", sans-serif;font-weight:800;line-height:1.05;letter-spacing:-.01em}
 .display-italic{font-family:var(--font-display);font-style:italic;font-weight:400}
 .mono{font-family:var(--font-mono)}
 .label{
@@ -109,7 +109,7 @@ body::before{
 h3.label{letter-spacing:.03em}
 
 .series-title{
-  font-family:"Montserrat", sans-serif;
+  font-family:"Manrope", sans-serif;
   font-weight:600;
   font-size:var(--fs-md);
   text-transform:none;
@@ -120,7 +120,7 @@ h3.label{letter-spacing:.03em}
 .eyebrow{display:flex;align-items:center;gap:.6em}
 .eyebrow::before{content:"";width:1.6em;height:1px;background:currentColor;opacity:.5}
 
-h1,h2,h3,h4{font-family:"Montserrat", sans-serif;line-height:1.15}
+h1,h2,h3,h4{font-family:"Manrope", sans-serif;line-height:1.15}
 h1{font-weight:800}
 h2{font-size:var(--fs-lg);font-weight:700}
 h3{font-size:var(--fs-md);font-weight:600}
@@ -532,7 +532,7 @@ p{max-width:60ch}
 .artwork:hover .artwork-frame img{transform:scale(1.035)}
 .artwork-cap{padding-top:.8rem}
 .artwork-cap .mono{font-size:var(--fs-sm);color:var(--ink-soft);display:block;line-height:1.5}
-.artwork-cap .work-title{font-family:"Montserrat", sans-serif;font-weight:600;line-height:1.2;font-size:var(--fs-md);display:block;margin-bottom:.15rem}
+.artwork-cap .work-title{font-family:"Manrope", sans-serif;font-weight:600;line-height:1.2;font-size:var(--fs-md);display:block;margin-bottom:.15rem}
 @media (max-width:980px){.artwork-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:600px){.artwork-grid{grid-template-columns:1fr}}
 
