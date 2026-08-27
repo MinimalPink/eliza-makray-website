@@ -121,7 +121,7 @@ h3.label{letter-spacing:.03em}
 .eyebrow::before{content:"";width:1.6em;height:1px;background:currentColor;opacity:.5}
 
 h1,h2,h3,h4{font-family:"Montserrat", sans-serif;line-height:1.15}
-h1{font-weight:400}
+h1{font-weight:400;text-transform:uppercase}
 h2{font-size:var(--fs-lg);font-weight:300}
 h3{font-size:var(--fs-md);font-weight:200}
 h4{font-weight:200}
