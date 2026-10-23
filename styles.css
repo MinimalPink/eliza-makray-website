@@ -268,10 +268,10 @@ p{max-width:60ch}
   color:var(--ink-soft);max-width:48ch;margin-top:.2rem;
 }
 .hero-desc strong{color:var(--ink);font-weight:600}
-.hero-actions{display:flex;align-items:center;gap:1.2rem;margin-top:.4rem}
 .hero-scroll-cue{
-  display:flex;align-items:center;gap:.5em;
-  font-family:var(--font-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;
+  position:absolute;right:var(--edge-pad);bottom:1.6rem;
+  display:flex;align-items:center;gap:.6em;
+  font-family:var(--font-mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
   color:var(--ink-soft);
 }
 .hero-scroll-cue svg{animation:scrollbounce 1.8s ease-in-out infinite}
@@ -287,6 +287,7 @@ p{max-width:60ch}
   .hero-visual{height:42vh}
   .hero-copy{padding:var(--space-sm) var(--edge-pad) var(--space-md);gap:1rem}
   .hero-botanical{display:none}
+  .hero-scroll-cue{display:none}
 }
 @media (max-width:420px){
   .hero-visual{height:38vh}
