@@ -61,38 +61,21 @@
 </header>
 
 <main id="conteudo">
-  <div class="page-hero container">
-    <span class="label eyebrow">Sobre</span>
-    <h1 class="display">Eliza Makray</h1>
-    <p>Arte, natureza e territorialidade como caminhos de criação.</p>
-    <nav class="page-nav-jump" aria-label="Ir para seção">
-      <a href="#manifesto">Manifesto</a>
-      <a href="#trajetoria">Trajetória</a>
-      <a href="#curriculo">Currículo completo</a>
-    </nav>
-  </div>
-
-  <!-- ============ MANIFESTO ============ -->
-  <section class="section" id="manifesto" aria-labelledby="manifesto-h">
-    <div class="container manifesto">
-      <div class="manifesto-portrait" data-reveal>
-        <img src="assets/portraits/artist-portrait-02.webp" width="1133" height="1700" loading="lazy" alt="Retrato de Eliza Makray.">
-        <span class="label mono">Eliza Makray</span>
-      </div>
-      <div data-reveal>
-        <span class="label eyebrow">Manifesto</span>
-        <h2 id="manifesto-h" style="margin-block:.6rem 1.2rem">Arte, natureza e territorialidade</h2>
-      </div>
-    </div>
-
-    <div class="manifesto-full container">
-      <div data-reveal>
-        <p style="font-family:var(--font-display);font-size:var(--fs-md);color:var(--ink)">Eliza Makray (1987) é mãe e artista multidisciplinar brasileira cuja prática artística se enraíza na escuta sensível das expressões da natureza, na valorização do fazer manual e no resgate de saberes ancestrais. Seu trabalho busca desenvolver e inspirar uma expressão criativa autêntica, profundamente conectada com o corpo, com a própria história e com a Terra e reconhece a arte como uma ferramenta política transformadora.</p>
-        <p>Graduada em Naturologia, com especialização em saúde da mulher, formou-se doula e aprofundou seus estudos sobre a antroposofia e a terapia artística, com passagem por diversos ateliês ao longo da vida. Sua formação reverbera em sua prática artística, que compreende o ato criativo como um ritual alquímico de autoconhecimento e conexão com o meio ambiente e utiliza pintura, desenho, colagem, bordado, fotografia, escultura, vídeos, performances e instalações como meios de expressão.</p>
-      </div>
-      <div data-reveal>
-        <p>A artista é reconhecida pela sua pesquisa botânica e pelo uso de tintas naturais, ferramentas e suportes artísticos produzidos artesanalmente a partir de plantas, minerais e resíduos orgânicos. Esse domínio técnico não se limita à produção de materiais, mas se entrelaça com uma poética ecológica e ancestral, na qual cada pigmento e matéria-prima carrega uma origem e uma história. A produção das tintas e a escolha dos materiais tornam-se parte do processo artístico, transformando-se em um ato de respeito aos ciclos naturais e de valorização da autonomia criativa do artista.</p>
-      </div>
+  <!-- ============ INTRO (retrato + manifesto) ============ -->
+  <section class="sobre-intro container" id="manifesto" aria-labelledby="manifesto-h">
+    <figure class="sobre-portrait" data-reveal>
+      <img src="assets/portraits/artist-portrait-02.webp" width="1133" height="1700" alt="Retrato de Eliza Makray.">
+    </figure>
+    <div class="sobre-text" data-reveal>
+      <h1 id="manifesto-h" class="display">Eliza Makray</h1>
+      <p class="sobre-sub">Arte, natureza e territorialidade como caminhos de criação</p>
+      <p class="sobre-lead">Eliza Makray (1987) é mãe e artista multidisciplinar brasileira cuja prática artística se enraíza na escuta sensível das expressões da natureza, na valorização do fazer manual e no resgate de saberes ancestrais. Seu trabalho busca desenvolver e inspirar uma expressão criativa autêntica, profundamente conectada com o corpo, com a própria história e com a Terra e reconhece a arte como uma ferramenta política transformadora.</p>
+      <p>Graduada em Naturologia, com especialização em saúde da mulher, formou-se doula e aprofundou seus estudos sobre a antroposofia e a terapia artística, com passagem por diversos ateliês ao longo da vida. Sua formação reverbera em sua prática artística, que compreende o ato criativo como um ritual alquímico de autoconhecimento e conexão com o meio ambiente e utiliza pintura, desenho, colagem, bordado, fotografia, escultura, vídeos, performances e instalações como meios de expressão.</p>
+      <p>A artista é reconhecida pela sua pesquisa botânica e pelo uso de tintas naturais, ferramentas e suportes artísticos produzidos artesanalmente a partir de plantas, minerais e resíduos orgânicos. Esse domínio técnico não se limita à produção de materiais, mas se entrelaça com uma poética ecológica e ancestral, na qual cada pigmento e matéria-prima carrega uma origem e uma história. A produção das tintas e a escolha dos materiais tornam-se parte do processo artístico, transformando-se em um ato de respeito aos ciclos naturais e de valorização da autonomia criativa do artista.</p>
+      <nav class="page-nav-jump" aria-label="Ir para seção">
+        <a href="#trajetoria">Trajetória</a>
+        <a href="#curriculo">Currículo completo</a>
+      </nav>
     </div>
   </section>
 
@@ -100,7 +83,6 @@
   <section class="cv-section container" id="trajetoria" aria-labelledby="traj-h">
     <div class="section-head" data-reveal>
       <div>
-        <span class="label eyebrow">Trajetória</span>
         <h2 id="traj-h">Exposições</h2>
       </div>
     </div>
@@ -221,13 +203,18 @@
     </svg>
   </div>
   <div class="footer-inner container">
-    <h2 class="footer-cta display">Vamos cultivar uma ideia juntos?</h2>
-    <a class="btn btn-outline--light" href="mailto:elizamakrayarte@gmail.com" data-track="contact_click" data-label="email">Escrever um e-mail <span class="btn-arrow" aria-hidden="true">→</span></a>
+    <div class="footer-top">
+      <div>
+        <h2 class="footer-cta display">Vamos cultivar uma ideia juntos?</h2>
+        <p class="footer-lede">Convites para exposições, curadoria, oficinas e colaborações são muito bem-vindos.</p>
+      </div>
+      <a class="btn btn-light" href="https://wa.me/5548996498711?text=Ol%C3%A1%20Eliza%21%20Vim%20pelo%20seu%20site%20%28elizamakray.com%29%20e%20gostaria%20de%20conversar." data-track="whatsapp_click" data-label="footer_cta" target="_blank" rel="noopener">Conversar no WhatsApp <span class="btn-arrow" aria-hidden="true">→</span></a>
+    </div>
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Contato</h4>
-        <a href="mailto:elizamakrayarte@gmail.com" data-track="contact_click" data-label="email">elizamakrayarte@gmail.com</a>
-        <a href="https://wa.me/5548996498711" data-track="whatsapp_click" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://wa.me/5548996498711?text=Ol%C3%A1%20Eliza%21%20Vim%20pelo%20seu%20site%20%28elizamakray.com%29%20e%20gostaria%20de%20conversar." data-track="whatsapp_click" data-label="footer_number" target="_blank" rel="noopener">WhatsApp +55 48 99649-8711</a>
+        <a href="https://maps.app.goo.gl/YirxrHpd8r8B4ydb7" data-track="contact_click" data-label="google_profile" target="_blank" rel="noopener">Perfil no Google</a>
         <a href="https://www.instagram.com/eliza_makray/" target="_blank" rel="noopener">@eliza_makray</a>
         <a href="https://www.instagram.com/eliza_makray_photo/" target="_blank" rel="noopener">@eliza_makray_photo</a>
       </div>
@@ -237,10 +224,7 @@
         <a href="projetos.html">Projetos</a>
         <a href="oficinas.html">Oficinas</a>
         <a href="sobre.html">Sobre</a>
-      </div>
-      <div class="footer-col">
-        <h4>Oficinas &amp; convites</h4>
-        <p>Convites para exposições, curadoria e colaborações são muito bem-vindos.</p>
+        <a href="calendario.html">Calendário Musas</a>
       </div>
       <div class="footer-col">
         <h4>Coletivos</h4>
